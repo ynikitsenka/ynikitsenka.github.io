@@ -1,9 +1,9 @@
 header {
     display: flex;
-    justify-content: space-between;  /* Space between name and navigation */
-    align-items: center;  /* Aligns vertically */
+    justify-content: space-between;  
+    align-items: center;  
     padding: 10px 20px;
-    background-color: #f8f9fa;  /* Light background */
+    background-color: #f8f9fa;  
 }
 
 header h3 {
@@ -16,7 +16,7 @@ nav ul {
     justify-content: center;
     padding: 0;
     margin: 0;
-    background-color: #f8f9fa;  /* Light background */
+    background-color: #f8f9fa; 
 }
 
 nav ul li {
