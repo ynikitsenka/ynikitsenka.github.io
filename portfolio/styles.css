@@ -1,9 +1,10 @@
 
 body {
-    font-family: Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #F8F9FA;
     margin: 0;
     padding: 0;
+    padding-top: 70px;
 }
 
 
@@ -12,8 +13,15 @@ header {
     justify-content: space-between;  
     align-items: center;  
     padding: 10px 20px;
-    background-color: #DEE2E6;  
+    background-color: #DEE2E6;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 header h3 {
     color: #212529;
@@ -27,7 +35,6 @@ nav ul {
     justify-content: center;
     padding: 0;
     margin: 0;
-    background-color: #DEE2E6; 
 }
 
 nav ul li {
@@ -49,9 +56,9 @@ nav ul li a:hover {
 main {
     display: flex;
     flex-direction: column;
-    align-items: left;  
+    align-items: center;  
     justify-content: center;
-    height: 80vh; 
+    height: 80vh;
     text-align: left;
 }
 
@@ -69,3 +76,4 @@ main p {
     font-size: 1.5rem;
     color: #6C757D;
 }
+
