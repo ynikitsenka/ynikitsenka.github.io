@@ -79,3 +79,48 @@ main p {
     color: #6C757D;
 }
 
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    text-align: left;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about-text h1 {
+    font-size: 2rem;
+    color: #212529;
+    margin-bottom: 5px;
+}
+
+.about-text h3 {
+    font-size: 1.2rem;
+    color: #6C757D;
+    font-weight: normal;
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: #495057;
+    line-height: 1.6;
+}
