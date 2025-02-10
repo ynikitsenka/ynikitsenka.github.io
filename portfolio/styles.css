@@ -83,7 +83,7 @@ main p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 20px;
+    padding: 50px 50px;
     background-color: #ffffff;
 }
 
@@ -120,6 +120,7 @@ main p {
 }
 
 .about-text p {
+    font-family: Garamond;
     font-size: 1rem;
     color: #495057;
     line-height: 1.6;
