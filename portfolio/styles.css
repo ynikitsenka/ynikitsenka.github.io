@@ -87,20 +87,20 @@ main p {
     background-color: #ffffff;
 }
 
+.profile-image {
+    width: 275px;  
+    height: 300px; 
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: -40px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .about-container {
     display: flex;
     align-items: center;
     max-width: 900px;
-    text-align: center;
-}
-
-.profile-image {
-    width: 225px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-left: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; 
 }
 
 .about-text {
