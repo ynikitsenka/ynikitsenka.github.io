@@ -92,7 +92,7 @@ main p {
     height: 300px; 
     border-radius: 50%;
     object-fit: cover;
-    margin-left: -10px; 
+    margin-left: -35px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
