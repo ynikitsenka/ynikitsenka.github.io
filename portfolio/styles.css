@@ -98,7 +98,7 @@ main p {
 
 .about-container {
     display: flex;
-    align-items: left;
+    align-items: center;
     max-width: 950px;
     text-align: left; 
 }
@@ -110,7 +110,7 @@ main p {
 .about-text h1 {
     font-size: 2rem;
     color: #212529;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     text-align: center; 
 }
 
@@ -140,7 +140,7 @@ main p {
     margin-bottom: 15px;
 }
 
-/* Links */
+
 #contact a {
     color: #0056b3;
     font-weight: bold;
