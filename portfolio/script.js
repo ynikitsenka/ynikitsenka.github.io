@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("navigation.html") // Fetch the navigation file
+    // Fetch and insert the navigation
+    fetch("navigation.html")
         .then(response => response.text())
         .then(data => {
-            document.body.insertAdjacentHTML("afterbegin", data); // Insert at the top of body
+            document.body.insertAdjacentHTML("afterbegin", data);
         })
         .catch(error => console.error("Error loading navigation:", error));
-});
 
- fetch("footer.html")
+    // Fetch and insert the footer
+    fetch("footer.html")
         .then(response => response.text())
         .then(data => {
             document.body.insertAdjacentHTML("beforeend", data);
