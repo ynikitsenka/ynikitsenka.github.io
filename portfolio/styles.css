@@ -96,8 +96,8 @@ about {
 }
 
 .profile-image {
-    width: 375px;
-    height: 400px;
+    width: 275px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 70px;
