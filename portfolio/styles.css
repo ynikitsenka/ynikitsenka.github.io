@@ -148,7 +148,7 @@ contact a {
     font-weight: bold;
 }
 
-#contact a:hover {
+contact a:hover {
     text-decoration: underline;
 }
 
