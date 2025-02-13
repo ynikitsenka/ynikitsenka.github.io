@@ -79,7 +79,7 @@ main p {
     color: #6C757D;
 }
 
-about {
+#about {
     padding-top: 100px;
     display: flex;
     justify-content: center;
@@ -88,14 +88,14 @@ about {
     background-color: #ffffff;
 }
 
-.about-container {
+#.about-container {
     display: flex;
     align-items: center; 
     max-width: 750px;
     text-align: left;
 }
 
-.profile-image {
+#.profile-image {
     width: 275px;
     height: 300px;
     border-radius: 50%;
@@ -104,11 +104,11 @@ about {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.about-text {
+#.about-text {
     max-width: 450px;
 }
 
-.about-text h1 {
+#.about-text h1 {
     font-size: 2rem;
     color: #212529;
     margin-bottom: 2px;
@@ -116,39 +116,39 @@ about {
     text-align: center; 
 }
 
-.about-text h3 {
+#.about-text h3 {
     font-size: 1.2rem;
     color: #6C757D;
     font-weight: normal;
     text-align: center; 
 }
 
-.about-text p {
+#.about-text p {
     font-family: Garamond;
     font-size: 1.0rem;
     color: #495057;
     line-height: 1.6;
 }
 
-contact h2 {
+#contact h2 {
     font-size: 2rem;
     color: #343A40;
     margin-bottom: 10px;
 }
 
-contact p {
+#contact p {
     font-size: 1.2rem;
     color: #6C757D;
     margin-bottom: 15px;
 }
 
 
-contact a {
+#contact a {
     color: #0056b3;
     font-weight: bold;
 }
 
-contact a:hover {
+#contact a:hover {
     text-decoration: underline;
 }
 
