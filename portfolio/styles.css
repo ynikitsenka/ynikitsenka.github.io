@@ -87,14 +87,14 @@ main p {
     background-color: #ffffff;
 }
 
-#.about-container {
+.about-container {
     display: flex;
     align-items: center; 
     max-width: 750px;
     text-align: left;
 }
 
-#.profile-image {
+.profile-image {
     width: 275px;
     height: 300px;
     border-radius: 50%;
@@ -103,11 +103,11 @@ main p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#.about-text {
+.about-text {
     max-width: 450px;
 }
 
-#.about-text h1 {
+.about-text h1 {
     font-size: 2rem;
     color: #212529;
     margin-bottom: 2px;
@@ -115,14 +115,14 @@ main p {
     text-align: center; 
 }
 
-#.about-text h3 {
+.about-text h3 {
     font-size: 1.2rem;
     color: #6C757D;
     font-weight: normal;
     text-align: center; 
 }
 
-#.about-text p {
+.about-text p {
     font-family: Garamond;
     font-size: 1.0rem;
     color: #495057;
