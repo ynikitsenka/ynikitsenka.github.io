@@ -81,26 +81,26 @@ main p {
 
 #about {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     padding: 100px 100px;
     background-color: #ffffff;
 }
 
-.profile-image {
-    width: 275px;  
-    height: 300px; 
-    border-radius: 50%;
-    object-fit: cover;
-    margin-left: -35px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .about-container {
     display: flex;
-    align-items: left;
+    align-items: center; 
     max-width: 950px;
-    text-align: left; 
+    text-align: left;
+}
+
+.profile-image {
+    width: 275px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1in;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-text {
