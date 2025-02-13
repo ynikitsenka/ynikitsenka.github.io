@@ -79,7 +79,7 @@ main p {
     color: #6C757D;
 }
 
-#about {
+about {
     padding-top: 50px;
     display: flex;
     justify-content: center;
@@ -96,8 +96,8 @@ main p {
 }
 
 .profile-image {
-    width: 275px;
-    height: 300px;
+    width: 375px;
+    height: 400px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 70px;
@@ -130,20 +130,20 @@ main p {
     line-height: 1.6;
 }
 
-#contact h2 {
+contact h2 {
     font-size: 2rem;
     color: #343A40;
     margin-bottom: 10px;
 }
 
-#contact p {
+contact p {
     font-size: 1.2rem;
     color: #6C757D;
     margin-bottom: 15px;
 }
 
 
-#contact a {
+contact a {
     color: #0056b3;
     font-weight: bold;
 }
