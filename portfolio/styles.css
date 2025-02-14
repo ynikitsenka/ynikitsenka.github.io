@@ -134,12 +134,12 @@ main p {
                 no-repeat center center;
     background-size: cover;
     text-align: center;
-    padding: 100px 20px;
+    padding: 150px 20px;
     color: #212529;
-    width: 100%;
-    max-width: 1200px;  
+    width: 90%;
+    max-width: 1400px; 
     margin: 50px auto;  
-    border-radius: 15px; 
+    border-radius: 20px; 
 }
 
 .contact-heading {
