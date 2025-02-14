@@ -129,6 +129,7 @@ main p {
     line-height: 1.6;
 }
 
+
 #contact {
     background: url('—Pngtree—ethereal watercolor background in shades_13379941.jpg') 
                 no-repeat center center;
@@ -137,60 +138,94 @@ main p {
     padding: 150px 20px;
     color: #212529;
     width: 90%;
-    max-width: 1400px; 
-    margin: 50px auto;  
-    border-radius: 20px; 
+    max-width: 1400px;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 
 .contact-heading {
     font-family: 'Garamond', serif;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: bold;
-    background-color: rgba(245, 222, 179, 0.8);
+    background-color: rgba(245, 222, 179, 0.85);
     display: inline-block;
-    padding: 10px 30px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    padding: 15px 40px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 
 .contact-form {
-    background: rgba(245, 222, 179, 0.8);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 90%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
     text-align: left;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.contact-form label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-top: 10px;
 }
 
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
     font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    transition: border 0.3s ease;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
 }
 
 
 .contact-form button {
     background-color: #0056b3;
     color: white;
-    padding: 10px;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
     cursor: pointer;
     width: 100%;
-    transition: background 0.3s ease;
+    margin-top: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s ease, transform 0.2s;
 }
 
 
 .contact-form button:hover {
     background-color: #003d80;
+    transform: scale(1.03);
 }
 footer {
     display: flex;
