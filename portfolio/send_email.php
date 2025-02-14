@@ -3,7 +3,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
     $message = htmlspecialchars($_POST["message"]);
 
-    $to = "your-email@example.com";  // Replace with your actual email
+    $to = "liza.nickita@gmail.com";  
     $subject = "New Message from Contact Form";
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
