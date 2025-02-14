@@ -130,11 +130,19 @@ main p {
 }
 
 #contact {
-    background: url('—Pngtree—ethereal watercolor background in shades_13379941.jpg') no-repeat center center/cover;
+    background: url('—Pngtree—ethereal watercolor background in shades_13379941.jpg') 
+                no-repeat center center fixed;
+    background-size: cover;
     text-align: center;
     padding: 100px 20px;
     color: #212529;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .contact-heading {
     font-family: 'Garamond', serif;
@@ -144,7 +152,9 @@ main p {
     display: inline-block;
     padding: 10px 30px;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
+
 
 .contact-form {
     background: rgba(255, 255, 255, 0.9);
@@ -152,8 +162,10 @@ main p {
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 400px;
-    width: 100%;
+    width: 90%;
+    text-align: left;
 }
+
 
 .contact-form input,
 .contact-form textarea {
@@ -165,6 +177,7 @@ main p {
     font-size: 1rem;
 }
 
+
 .contact-form button {
     background-color: #0056b3;
     color: white;
@@ -174,12 +187,13 @@ main p {
     font-size: 1rem;
     cursor: pointer;
     width: 100%;
+    transition: background 0.3s ease;
 }
+
 
 .contact-form button:hover {
     background-color: #003d80;
 }
-
 footer {
     display: flex;
     justify-content: center;
