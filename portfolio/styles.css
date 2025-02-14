@@ -129,26 +129,21 @@ main p {
     line-height: 1.6;
 }
 
-#contact h2 {
-    font-size: 2rem;
-    color: #343A40;
-    margin-bottom: 10px;
+#contact {
+    background: url('your-image.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: #212529;
 }
 
-#contact p {
-    font-size: 1.2rem;
-    color: #6C757D;
-    margin-bottom: 15px;
-}
-
-
-#contact a {
-    color: #0056b3;
+.contact-heading {
+    font-family: 'Garamond', serif;
+    font-size: 2.5rem;
     font-weight: bold;
-}
-
-#contact a:hover {
-    text-decoration: underline;
+    background-color: rgba(245, 222, 179, 0.8);
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 5px;
 }
 
 footer {
