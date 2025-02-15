@@ -287,6 +287,8 @@ footer a {
 .project p {
     font-size: 1rem;
     color: #555;
+    font-family: Garamond;
+    color: #212529;
 }
 
 .btn {
