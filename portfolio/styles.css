@@ -279,9 +279,9 @@ footer a {
 .projects-container {
     display: flex;
     justify-content: center;
-    gap: 30px;  /* Adds space between projects */
-    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
-    padding: 20px;
+    gap: 30px;
+    flex-wrap: nowrap; /* Prevents wrapping */
+    overflow-x: auto; /* Adds horizontal scroll if needed */
 }
 
 .project {
@@ -324,3 +324,4 @@ footer a {
 .btn:hover {
     background-color: #003d80;
 }
+
