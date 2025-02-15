@@ -210,7 +210,7 @@ main p {
 
 
 .contact-form button {
-    background-color: #0056b3;
+    background-color: rgba(255, 255, 255, 0.95);;
     color: white;
     padding: 12px;
     border: none;
@@ -227,7 +227,7 @@ main p {
 
 
 .contact-form button:hover {
-    background-color: #003d80;
+    background-color: rgba(255, 255, 255, 0.95);;
     transform: scale(1.05);
 }
 
@@ -322,7 +322,7 @@ footer a {
 }
 
 .btn:hover {
-    background-color: #003d80;
+    background-color: rgba(255, 255, 255, 0.95);;
 }
 .resume-preview img {
     width: 250px; /* Adjust size as needed */
@@ -349,7 +349,7 @@ footer a {
 
 .btn {
     display: inline-block;
-    background-color: #0056b3;
+    background-color: rgba(255, 255, 255, 0.95);;
     color: white;
     text-decoration: none;
     padding: 10px 15px;
