@@ -277,8 +277,8 @@ main p {
 
 /* Image Styling */
 .resume-container img {
-    width: 150px;  /* Adjust width to make the image smaller */
-    height: 150px; /* Adjust height to maintain aspect ratio */
+    width: 210px;  /* Adjust width to make the image smaller */
+    height: 210px; /* Adjust height to maintain aspect ratio */
     border-radius: 50%; /* Keeps the image circular */
     object-fit: cover; /* Ensures the image fits well in the container */
     margin: 0 auto 20px auto; /* Center the image and add space below */
