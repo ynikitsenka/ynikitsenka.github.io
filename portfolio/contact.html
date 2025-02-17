@@ -10,22 +10,26 @@
 </head>
 <body>
 
-    <main>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Send me a message, and I'll get back to you.</p>
+     <section id="contact">
+        <h2 class="contact-heading">Contact Me</h2>
+        <p>Reac out to me at (919) 520-7505 or fill out the form below.</p>
 
-            <form action="send_email.php" method="POST">
-                <label for="email">Your Email *</label>
-                <input type="email" id="email" name="email" required>
+        <form action="send_email.php" method="POST" class="contact-form">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required>
 
-                <label for="message">Message *</label>
-                <textarea id="message" name="message" required></textarea>
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
 
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
+
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
 </body>
 </html>
