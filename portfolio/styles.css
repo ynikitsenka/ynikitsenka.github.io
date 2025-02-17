@@ -229,8 +229,8 @@ main p {
 /* Image Styling */
 .resume-container img {
     width: 300px;  /* Adjust width to make the image smaller */
-    height: 300px; /* Adjust height to maintain aspect ratio */
-    border-radius: 80%; /* Keeps the image circular */
+    height: 200px; /* Adjust height to maintain a rectangular shape */
+    border-radius: 15px; /* Rounded corners */
     object-fit: cover; /* Ensures the image fits well in the container */
     margin: 0 auto 20px auto; /* Center the image and add space below */
     display: block; /* Centers the image horizontally */
