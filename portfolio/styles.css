@@ -1,18 +1,21 @@
+/* General Body */
 body {
     font-family: sans-serif;
     background-color: #F8F9FA;
     margin: 0;
     padding: 0;
-    padding-top: 70px;
+    text-align: center;
+    background: #f5f5f5;
 }
 
+/* Header */
 header {
     display: flex;
-    justify-content: space-between;  
-    align-items: center;  
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
     background-color: #DEE2E6;
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -50,28 +53,30 @@ nav ul li a:hover {
     color: #0056b3;
 }
 
+/* Main Section */
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
     justify-content: center;
     height: 80vh;
     text-align: left;
 }
 
 main h2 {
-    font-size: 5rem;  
+    font-size: 5rem;
     font-weight: bold;
-    color: #343A40;  
+    color: #343A40;
     margin-bottom: 10px;
 }
 
 main p {
-    font-family: cursive;  
+    font-family: cursive;
     font-size: 2.0rem;
     color: #6C757D;
 }
 
+/* About Section */
 #about {
     margin-top: 100px;
     display: flex;
@@ -83,7 +88,7 @@ main p {
 
 .about-container {
     display: flex;
-    align-items: center; 
+    align-items: center;
     max-width: 750px;
     text-align: left;
 }
@@ -105,14 +110,14 @@ main p {
     font-size: 2rem;
     color: #212529;
     margin-bottom: 2px;
-    text-align: center; 
+    text-align: center;
 }
 
 .about-text h3 {
     font-size: 1.2rem;
     color: #6C757D;
     font-weight: normal;
-    text-align: center; 
+    text-align: center;
 }
 
 .about-text p {
@@ -122,39 +127,163 @@ main p {
     line-height: 1.6;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+/* Showcase Section */
+#showcase {
     text-align: center;
-    background: #f5f5f5;
+    padding: 50px;
+    background-color: #f9f9f9;
 }
 
-header {
-    background: white;
-    padding: 15px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-nav ul li .active {
-    color: #d4a373;
+.showcase-heading {
+    font-size: 2.5rem;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: nowrap; /* Prevents wrapping */
+    overflow-x: auto; /* Adds horizontal scroll if needed */
+}
+
+.project {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #555;
+    font-family: Garamond;
+    color: #212529;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #6c757d; /* Grey background */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #5a6268; /* Darker grey on hover */
+}
+
+/* Resume Section */
+#resume {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    margin-top: 100px;
+    text-align: left;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#resume h2 {
+    font-size: 2.5rem;
+    color: #212529;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.resume-container p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #212529;
+    margin-top: 20px;
+}
+
+.resume-container ul {
+    font-size: 1rem;
+    color: #495057;
+    line-height: 1.8;
+    padding-left: 20px;
+}
+
+.resume-container li {
+    margin-bottom: 10px;
+}
+
+.resume-container a {
+    text-decoration: none;
+}
+
+.resume-container .btn {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.resume-container .btn:hover {
+    background-color: #5a6268;
+}
+
+/* Footer Section */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #DEE2E6;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    color: #212529;
+    font-size: 0.9rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* Contact Section */
 #contact {
     background: url('contact-bg.jpg') no-repeat center center;
     background-size: cover;
@@ -232,143 +361,3 @@ nav ul li .active {
 .contact-form button:hover {
     background-color: #5a6268;
 }
-
-footer {
-    margin-top: 40px;
-    font-size: 0.9rem;
-}
-
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #DEE2E6;
-    padding: 10px 0;
-    text-align: center;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
-}
-
-footer p {
-    margin: 0;
-    color: #212529;
-    font-size: 0.9rem;
-}
-
-footer a {
-    text-decoration: none;
-}
-
-.social-icon {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-}
-
-#showcase {
-    text-align: center;
-    padding: 50px;
-    background-color: #f9f9f9;
-}
-
-.showcase-heading {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.projects-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: nowrap; /* Prevents wrapping */
-    overflow-x: auto; /* Adds horizontal scroll if needed */
-}
-
-.project {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-}
-
-.project img {
-    width: 100%;
-    border-radius: 5px;
-    height: auto;
-}
-
-.project h3 {
-    font-size: 1.5rem;
-    margin: 15px 0;
-}
-
-.project p {
-    font-size: 1rem;
-    color: #555;
-    font-family: Garamond;
-    color: #212529;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #6c757d; /* Grey background */
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 1rem;
-    margin-top: 10px;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background-color: #5a6268; /* Darker grey on hover */
-}
-
-.resume-preview img {
-    width: 250px; /* Adjust size as needed */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.resume-preview img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-}
-
-.resume-container {
-    text-align: center;
-    padding: 50px;
-}
-
-.resume-heading {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #6c757d; /* Grey background */
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 1rem;
-    margin-top: 15px;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background-color: #5a6268; /* Darker grey on hover */
-}
-
