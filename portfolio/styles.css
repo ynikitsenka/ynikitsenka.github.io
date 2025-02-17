@@ -135,15 +135,72 @@ main p {
 /* Showcase Section */
 #showcase {
     text-align: center;
-    padding: 50px;
+    padding: 50px 20px;  /* Add padding on top to give space */
     background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    justify-content: flex-start; /* Start the content from the top */
+    align-items: center; /* Center content horizontally */
 }
 
 .showcase-heading {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
+    margin-top: 50px; /* Adjust this to give proper space from the top */
 }
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: nowrap; /* Prevents wrapping */
+    overflow-x: auto; /* Adds horizontal scroll if needed */
+}
+
+.project {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #555;
+    font-family: Garamond;
+    color: #212529;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #6c757d; /* Grey background */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #5a6268; /* Darker grey on hover */
+}
+
 
 .projects-container {
     display: flex;
@@ -316,7 +373,7 @@ footer a {
     font-family: 'Garamond', serif;
     font-size: 2.5rem;
     color: #212529;
-    background: rgba(245, 222, 179, 0.8);
+    background: 0px 10px 20px rgba(0, 0, 0, 0.2);
     padding: 15px 40px;
     border-radius: 8px;
     display: inline-block;
