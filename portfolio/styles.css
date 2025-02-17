@@ -214,6 +214,18 @@ main p {
     margin: 0 auto;
 }
 
+/* Image Styling */
+.resume-container img {
+    width: 150px;  /* Adjust width to make the image smaller */
+    height: 150px; /* Adjust height to maintain aspect ratio */
+    border-radius: 50%; /* Keeps the image circular */
+    object-fit: cover; /* Ensures the image fits well in the container */
+    margin: 0 auto 20px auto; /* Center the image and add space below */
+    display: block; /* Centers the image horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Resume Text Styling */
 .resume-container p {
     font-size: 1.25rem;
     font-weight: bold;
