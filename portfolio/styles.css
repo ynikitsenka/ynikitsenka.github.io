@@ -111,7 +111,7 @@ main p {
 .about-text h1 {
     font-size: 2.5rem; /* Adjusted font size for better visibility */
     color: #212529;
-    margin-bottom: 20px; /* Added margin for space */
+    margin-bottom: 10px; /* Added margin for space */
     text-align: center;
 }
 
@@ -120,7 +120,7 @@ main p {
     color: #6C757D;
     font-weight: normal;
     text-align: center;
-    margin-bottom: 20px; /* Added space between heading and paragraph */
+    margin-bottom: 10px; /* Added space between heading and paragraph */
 }
 
 .about-text p {
@@ -128,7 +128,7 @@ main p {
     font-size: 1rem;
     color: #495057;
     line-height: 1.6;
-    margin-top: 20px; /* Added top margin to create space between text and heading */
+    margin-top: 10px; /* Added top margin to create space between text and heading */
 }
 
 /* Showcase Section */
