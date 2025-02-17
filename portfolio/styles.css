@@ -106,7 +106,7 @@ main p {
 
 .about-text {
     max-width: 450px;
-    margin-top: -30px; /* Move text up */
+    margin-top: -50px; /* Move text up */
 }
 
 .about-text h1 {
