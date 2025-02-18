@@ -141,6 +141,8 @@ main p {
     justify-content: flex-start; /* Start the content from the top */
     align-items: center; /* Center content horizontally */
     margin-top: -205px; /* Adjusted to move the entire section up without affecting the heading */
+    min-height: 100vh; /* Ensures the section takes at least the full height of the viewport */
+    overflow-y: auto; /* Allows scrolling if content exceeds the container's height */
 }
 
 .showcase-heading {
@@ -150,14 +152,15 @@ main p {
     margin-top: 160px; /* This keeps the heading in the middle */
 }
 
-
 .projects-container {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: nowrap; /* Prevents wrapping */
+    flex-wrap: wrap; /* Allows wrapping of the projects */
     overflow-x: auto; /* Adds horizontal scroll if needed */
     margin-top: -20px;
+    width: 100%;
+    max-width: 1200px; /* Optional: limits the maximum width of the container */
 }
 
 .project {
@@ -165,8 +168,9 @@ main p {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 280px; /* Adjust the width for each project */
     text-align: center;
+    margin: 10px 0; /* Adds vertical margin between projects */
 }
 
 .project img {
@@ -200,8 +204,7 @@ main p {
 }
 
 .btn:hover {
-    background-color: #5a6268; /* Darker grey on hover */
-}
+    background-color: #5a6268;
 
 /* Resume Section */
 #resume {
