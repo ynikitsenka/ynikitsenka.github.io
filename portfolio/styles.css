@@ -235,44 +235,25 @@ main p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
-/* Resume Text Styling */
-.resume-container p {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #212529;
-    margin-top: 20px;
+.resume-container img {
+    width: 100%; /* Ensures the image takes full width of its container */
+    height: 400px; /* Increases height for a more stretched look */
+    object-fit: cover; /* Ensures the image fills the space properly */
+    border-radius: 15px; /* Adds rounded corners for a smoother look */
+    border: 6px double #6a0dad; /* Fun double border in purple */
+    box-shadow: 0px 0px 15px rgba(106, 13, 173, 0.6); /* Adds a glowing effect */
 }
 
-.resume-container ul {
-    font-size: 1rem;
-    color: #495057;
-    line-height: 1.8;
-    padding-left: 20px;
+/* Optional: Alternative fun border styles */
+.dashed-border {
+    border: 5px dashed #ff6b6b; /* A playful dashed border in coral */
 }
 
-.resume-container li {
-    margin-bottom: 10px;
+.glow-border {
+    border: 4px solid #00b4d8;
+    box-shadow: 0px 0px 15px #00b4d8; /* Neon-like blue glow */
 }
 
-.resume-container a {
-    text-decoration: none;
-}
-
-.resume-container .btn {
-    margin-top: 20px;
-    display: inline-block;
-    background-color: #6c757d;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background 0.3s;
-}
-
-.resume-container .btn:hover {
-    background-color: #5a6268;
-}
 
 /* Footer Section */
 footer {
