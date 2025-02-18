@@ -157,6 +157,7 @@ main p {
     gap: 30px;
     flex-wrap: nowrap; /* Prevents wrapping */
     overflow-x: auto; /* Adds horizontal scroll if needed */
+    margin-top: -20px;
 }
 
 .project {
