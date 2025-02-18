@@ -224,7 +224,21 @@ main p {
     max-width: 900px;
     margin: 0 auto;
 }
+.resume-container .btn {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
 
+.resume-container .btn:hover {
+    background-color: #5a6268;
+}
 .resume-container img {
     display: block;
     max-width: 100%; /* Prevents the image from stretching beyond its container */
