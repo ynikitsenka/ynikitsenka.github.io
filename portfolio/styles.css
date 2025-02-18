@@ -140,7 +140,7 @@ main p {
     flex-direction: column; /* Align children vertically */
     justify-content: flex-start; /* Start the content from the top */
     align-items: center; /* Center content horizontally */
-    margin-top: -110px; /* Adjusted to move the entire section up without affecting the heading */
+    margin-top: -190px; /* Adjusted to move the entire section up without affecting the heading */
 }
 
 .showcase-heading {
