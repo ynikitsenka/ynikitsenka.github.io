@@ -163,58 +163,59 @@ main p {
     max-width: 1200px;
 }
 
-/* Resume Section */
-#resume {
-    background-color: #ffffff;
-    padding: 50px 20px;
-    margin-top: 100px;
-    text-align: left;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
+/* Resume Section Title */
 #resume h2 {
-    font-size: 2.5rem;
+    font-size: 2rem; /* Slightly smaller for a more compact feel */
     color: #212529;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
+/* Smaller & Sleeker Resume Container */
 .resume-container {
-    max-width: 900px;
+    max-width: 600px; /* Reduced width for a sleeker look */
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Resume Image Adjustments */
+.resume-container img {
+    max-width: 90%; /* Slightly smaller image */
+    height: auto;
+    border-radius: 8px; /* Softer rounded edges */
+    border: 3px solid #444; /* Lighter border */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); /* Softer glow */
     margin: 0 auto;
 }
+
+/* Cute Button Styling */
 .resume-container .btn {
-    margin-top: 20px;
+    margin-top: 15px;
     display: inline-block;
-    background-color: #6c757d;
+    background-color: #00b4d8; /* Cute bright blue */
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background 0.3s;
+    padding: 8px 14px; /* Smaller button */
+    border-radius: 25px; /* Rounded pill shape */
+    font-size: 0.9rem; /* Slightly smaller text */
+    font-weight: bold;
+    box-shadow: 0px 3px 8px rgba(0, 180, 216, 0.5); /* Soft glowing effect */
+    transition: all 0.3s ease-in-out;
 }
 
+/* Button Hover Effect */
 .resume-container .btn:hover {
-    background-color: #5a6268;
-}
-.resume-container img {
-    display: block;
-    max-width: 100%; /* Prevents the image from stretching beyond its container */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 10px; /* Smooth edges */
-    border: 4px solid #444; /* Dark gray border for a sleek look */
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6); /* Subtle glow effect */
-    background-color: transparent; /* Removes unnecessary background */
-    margin: 0 auto; /* Centers the image */
+    background-color: #0096c7; /* Darker blue on hover */
+    box-shadow: 0px 5px 12px rgba(0, 150, 199, 0.6);
+    transform: translateY(-2px); /* Slight lift effect */
 }
 
+/* Optional: Glowing Border Effect */
 .glow-border {
-    border: 4px solid #00b4d8;
-    box-shadow: 0px 0px 15px #00b4d8; /* Neon-like blue glow */
+    border: 3px solid #00b4d8;
+    box-shadow: 0px 0px 12px #00b4d8; /* Softer glow */
 }
-
 
 /* Footer Section */
 footer {
