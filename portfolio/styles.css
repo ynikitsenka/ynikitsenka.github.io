@@ -130,20 +130,20 @@ main p {
     margin-top: 10px; /* Added top margin to create space between text and heading */
 }
 
-/* Showcase Section */
+/* --- SHOWCASE SECTION --- */
 #showcase {
     text-align: center;
-    padding: 30px 10px;
+    padding: 30px 10px; /* Reduced padding to move things up */
     background-color: #f9f9f9;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100vh; /* Ensure it takes full viewport height */
+    flex-direction: column; /* Align children vertically */
+    justify-content: flex-start; /* Start the content from the top */
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Ensures the section takes full viewport height */
     overflow: hidden; /* Prevents double scrollbar */
 }
 
-/* New: Scrollable Content Wrapper */
+/* Scrollable Content Wrapper */
 .showcase-content {
     width: 100%;
     max-width: 1200px;
@@ -152,15 +152,73 @@ main p {
     padding-bottom: 30px; /* Prevents cut-off */
 }
 
-/* Ensures projects can wrap and scroll */
+/* Showcase Heading */
+.showcase-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 160px; /* This keeps the heading in the middle */
+}
+
+/* Projects Container */
 .projects-container {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allows wrapping of the projects */
+    overflow-x: auto; /* Adds horizontal scroll if needed */
     margin-top: -20px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1200px; /* Optional: limits the maximum width of the container */
+}
+
+/* Individual Project Card */
+.project {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px; /* Adjust the width for each project */
+    text-align: center;
+    margin: 10px 0; /* Adds vertical margin between projects */
+}
+
+/* Project Images */
+.project img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+}
+
+/* Project Titles */
+.project h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+/* Project Descriptions */
+.project p {
+    font-size: 1rem;
+    color: #555;
+    font-family: Garamond;
+    color: #212529;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #6c757d; /* Grey background */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #5a6268;
 }
 
 /* Resume Section Title */
