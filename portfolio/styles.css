@@ -130,82 +130,39 @@ main p {
     margin-top: 10px; /* Added top margin to create space between text and heading */
 }
 
-
 /* Showcase Section */
 #showcase {
     text-align: center;
-    padding: 30px 10px;  /* Reduced padding to move things up */
+    padding: 30px 10px;
     background-color: #f9f9f9;
     display: flex;
-    flex-direction: column; /* Align children vertically */
-    justify-content: flex-start; /* Start the content from the top */
-    align-items: center; /* Center content horizontally */
-    margin-top: -205px; /* Adjusted to move the entire section up without affecting the heading */
-    min-height: 100vh; /* Ensures the section takes at least the full height of the viewport */
-    overflow-y: auto; /* Allows scrolling if content exceeds the container's height */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh; /* Ensure it takes full viewport height */
+    overflow: hidden; /* Prevents double scrollbar */
 }
 
-.showcase-heading {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    margin-top: 160px; /* This keeps the heading in the middle */
+/* New: Scrollable Content Wrapper */
+.showcase-content {
+    width: 100%;
+    max-width: 1200px;
+    overflow-y: auto; /* Enables vertical scrolling */
+    flex-grow: 1; /* Ensures it fills available space */
+    padding-bottom: 30px; /* Prevents cut-off */
 }
 
+/* Ensures projects can wrap and scroll */
 .projects-container {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap; /* Allows wrapping of the projects */
-    overflow-x: auto; /* Adds horizontal scroll if needed */
+    flex-wrap: wrap;
     margin-top: -20px;
     width: 100%;
-    max-width: 1200px; /* Optional: limits the maximum width of the container */
+    max-width: 1200px;
 }
 
-.project {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 280px; /* Adjust the width for each project */
-    text-align: center;
-    margin: 10px 0; /* Adds vertical margin between projects */
-}
-
-.project img {
-    width: 100%;
-    border-radius: 5px;
-    height: auto;
-}
-
-.project h3 {
-    font-size: 1.5rem;
-    margin: 15px 0;
-}
-
-.project p {
-    font-size: 1rem;
-    color: #555;
-    font-family: Garamond;
-    color: #212529;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #6c757d; /* Grey background */
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 1rem;
-    margin-top: 10px;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background-color: #5a6268;
-}
 /* Resume Section */
 #resume {
     background-color: #ffffff;
