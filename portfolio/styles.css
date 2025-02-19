@@ -293,7 +293,7 @@ html, body {
 /* Resume Image */
 .resume-container img {
     display: block;
-    max-width: 70%; /* Smaller size */
+    max-width: 80%; /* Smaller size */
     max-height: 500px; /* Prevents it from being too tall */
     height: auto;
     border-radius: 10px;
