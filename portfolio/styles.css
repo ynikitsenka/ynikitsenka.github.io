@@ -131,25 +131,23 @@ main p {
 }
 
 /* --- SHOWCASE SECTION --- */
-#showcase {
-    text-align: center;
-    padding: 30px 10px; /* Reduced padding to move things up */
-    background-color: #f9f9f9;
-    display: flex;
-    flex-direction: column; /* Align children vertically */
-    justify-content: flex-start; /* Start the content from the top */
-    align-items: center; /* Center content horizontally */
-    height: 100vh; /* Ensures the section takes full viewport height */
-    overflow: hidden; /* Prevents double scrollbar */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto; /* Allows the whole page to scroll */
 }
 
-/* Scrollable Content Wrapper */
-.showcase-content {
-    width: 100%;
-    max-width: 1200px;
-    overflow-y: auto; /* Enables vertical scrolling */
-    flex-grow: 1; /* Ensures it fills available space */
-    padding-bottom: 30px; /* Prevents cut-off */
+#showcase {
+    text-align: center;
+    padding: 30px 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh; /* Ensures the section fills the viewport */
+    overflow: visible; /* Prevents scroll issues */
 }
 
 /* Showcase Heading */
@@ -157,19 +155,69 @@ main p {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
-    margin-top: 160px; /* This keeps the heading in the middle */
+    margin-top: 0; /* Removes unnecessary spacing */
+    padding-top: 20px; /* Keeps a small gap */
 }
 
-/* Projects Container */
+/* Projects Container - Makes it wrap properly */
 .projects-container {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap; /* Allows wrapping of the projects */
-    overflow-x: auto; /* Adds horizontal scroll if needed */
-    margin-top: -20px;
+    flex-wrap: wrap;
+    margin-top: 0;
     width: 100%;
-    max-width: 1200px; /* Optional: limits the maximum width of the container */
+    max-width: 1200px;
+    padding-bottom: 50px; /* Prevents bottom content cutoff */
+}
+
+/* Individual Project Card */
+.project {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Project Images */
+.project img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+}
+
+/* Project Titles */
+.project h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+/* Project Descriptions */
+.project p {
+    font-size: 1rem;
+    color: #555;
+    font-family: Garamond;
+    color: #212529;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #5a6268;
 }
 
 /* Individual Project Card */
