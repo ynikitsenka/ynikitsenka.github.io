@@ -269,58 +269,62 @@ html, body {
     background-color: #5a6268;
 }
 
-/* Resume Section Title */
+/* --- RESUME SECTION --- */
+#resume {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+/* Resume Title */
 #resume h2 {
-    font-size: 2rem; /* Slightly smaller for a more compact feel */
+    font-size: 2rem;
     color: #212529;
-    text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-/* Smaller & Sleeker Resume Container */
+/* Resume Container */
 .resume-container {
-    max-width: 600px; /* Reduced width for a sleeker look */
+    max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    padding: 15px;
 }
 
-/* Resume Image Adjustments */
+/* Resume Image */
 .resume-container img {
-    max-width: 90%; /* Slightly smaller image */
+    display: block;
+    max-width: 70%; /* Smaller size */
+    max-height: 500px; /* Prevents it from being too tall */
     height: auto;
-    border-radius: 8px; /* Softer rounded edges */
-    border: 3px solid #444; /* Lighter border */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); /* Softer glow */
-    margin: 0 auto;
+    border-radius: 10px;
+    border: 3px solid #444;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    margin: 0 auto 15px auto; /* Centers & adds space below */
 }
 
-/* Cute Button Styling */
+/* Glow Effect */
+.glow-border {
+    border: 3px solid #00b4d8;
+    box-shadow: 0px 0px 10px #00b4d8;
+}
+
+/* Resume Download Button */
 .resume-container .btn {
-    margin-top: 15px;
     display: inline-block;
-    background-color: #00b4d8; /* Cute bright blue */
+    background-color: #6c757d;
     color: white;
     text-decoration: none;
-    padding: 8px 14px; /* Smaller button */
-    border-radius: 25px; /* Rounded pill shape */
-    font-size: 0.9rem; /* Slightly smaller text */
-    font-weight: bold;
-    box-shadow: 0px 3px 8px rgba(0, 180, 216, 0.5); /* Soft glowing effect */
-    transition: all 0.3s ease-in-out;
+    padding: 8px 12px; /* Smaller button */
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin-top: 15px; /* Adds space between image & button */
+    transition: background 0.3s, transform 0.2s;
 }
 
 /* Button Hover Effect */
 .resume-container .btn:hover {
-    background-color: #0096c7; /* Darker blue on hover */
-    box-shadow: 0px 5px 12px rgba(0, 150, 199, 0.6);
-    transform: translateY(-2px); /* Slight lift effect */
-}
-
-/* Optional: Glowing Border Effect */
-.glow-border {
-    border: 3px solid #00b4d8;
-    box-shadow: 0px 0px 12px #00b4d8; /* Softer glow */
+    background-color: #5a6268;
+    transform: scale(1.05); /* Subtle pop effect */
 }
 
 /* Footer Section */
