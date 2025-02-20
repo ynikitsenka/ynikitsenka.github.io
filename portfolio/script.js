@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.getElementById("hamburger");
-    const navMenu = document.getElementById("navMenu");
-
     // Fetch and insert the navigation
     fetch("navigation.html")
         .then(response => response.text())
@@ -10,12 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("Error loading navigation:", error));
 
-    // Toggle the navigation menu and hamburger icon
-    hamburger.addEventListener("click", function () {
-        navMenu.classList.toggle("show");
-        hamburger.classList.toggle("active");
-    });
-
     // Fetch and insert the footer
     fetch("footer.html")
         .then(response => response.text())
@@ -23,4 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
             document.body.insertAdjacentHTML("beforeend", data);
         })
         .catch(error => console.error("Error loading footer:", error));
+
+    // Hamburger Menu Toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', function () {
+        navMenu.classList.toggle('show');
+        hamburger.classList.toggle('active');
+    });
 });
+
