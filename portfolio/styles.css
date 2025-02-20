@@ -53,6 +53,24 @@ nav ul li a:hover {
     color: #0056b3;
 }
 
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
 /* Main Section */
 main {
     display: flex;
@@ -65,7 +83,7 @@ main {
 }
 
 main h2 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
     color: #343A40;
     margin-bottom: 10px;
@@ -73,53 +91,59 @@ main h2 {
 
 main p {
     font-family: cursive;
-    font-size: 2.0rem;
+    font-size: 1.8rem;
     color: #6C757D;
 }
 
+/* About Section */
 #about {
-    margin-top: -120px; /* Moves the section up by 100 pixels more */
+    margin-top: -120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 100px;
+    padding: 60px 20px;
     background-color: #ffffff;
-    min-height: 50vh; /* Ensures enough space to view content */
+    min-height: 50vh;
+    flex-wrap: wrap;
+    text-align: center;
 }
+
 .about-container {
     display: flex;
     align-items: center;
     max-width: 750px;
     text-align: left;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .profile-image {
-    width: 300px;
-    height: 315px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 70px;
+    margin-right: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-text {
     max-width: 450px;
-    margin-top: -30px; /* Adjusted to move the text up slightly */
+    text-align: center;
 }
 
 .about-text h1 {
-    font-size: 2.5rem; /* Adjusted font size for better visibility */
+    font-size: 2rem;
     color: #212529;
-    margin-bottom: 10px; /* Added margin for space */
+    margin-bottom: 10px;
     text-align: center;
 }
 
 .about-text h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #6C757D;
     font-weight: normal;
     text-align: center;
-    margin-bottom: 10px; /* Added space between heading and paragraph */
+    margin-bottom: 10px;
 }
 
 .about-text p {
@@ -127,9 +151,19 @@ main p {
     font-size: 1rem;
     color: #495057;
     line-height: 1.6;
-    margin-top: 10px; /* Added top margin to create space between text and heading */
+    margin-top: 10px;
 }
 
+/* Responsive About Section */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-image {
+        margin: 0 0 20px 0;
+    }
+}
 /* --- SHOWCASE SECTION --- */
 html, body {
     height: 100%;
@@ -207,55 +241,6 @@ html, body {
 .btn {
     display: inline-block;
     background-color: #6c757d;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 1rem;
-    margin-top: 10px;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background-color: #5a6268;
-}
-
-/* Individual Project Card */
-.project {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 280px; /* Adjust the width for each project */
-    text-align: center;
-    margin: 10px 0; /* Adds vertical margin between projects */
-}
-
-/* Project Images */
-.project img {
-    width: 100%;
-    border-radius: 5px;
-    height: auto;
-}
-
-/* Project Titles */
-.project h3 {
-    font-size: 1.5rem;
-    margin: 15px 0;
-}
-
-/* Project Descriptions */
-.project p {
-    font-size: 1rem;
-    color: #555;
-    font-family: Garamond;
-    color: #212529;
-}
-
-/* Buttons */
-.btn {
-    display: inline-block;
-    background-color: #6c757d; /* Grey background */
     color: white;
     text-decoration: none;
     padding: 10px 15px;
@@ -439,3 +424,56 @@ footer a {
 .contact-form button:hover {
     background-color: #5a6268;
 }
+
+/* --- MEDIA QUERIES FOR RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column; /* Stacks projects vertically */
+        align-items: center; /* Centers projects */
+    }
+
+    .project {
+        width: 90%; /* Makes project cards take up more width on smaller screens */
+        margin-bottom: 20px; /* Adds spacing between stacked projects */
+    }
+
+    .showcase-heading {
+        font-size: 2rem; /* Smaller font size on smaller screens */
+    }
+
+    .contact-heading {
+        font-size: 3rem; /* Smaller font size for smaller screens */
+    }
+
+    #contact {
+        padding: 40px 20px; /* Less padding on smaller screens */
+    }
+
+    .resume-container img {
+        max-width: 100%; /* Ensures the image scales properly */
+    }
+}
+
+@media (max-width: 480px) {
+    .showcase-heading {
+        font-size: 1.8rem; /* Even smaller font size on very small screens */
+    }
+
+    .project h3 {
+        font-size: 1.3rem; /* Adjusts project title size */
+    }
+
+    .btn {
+        padding: 8px 12px; /* Smaller buttons */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .contact-form button {
+        padding: 10px;
+    }
+
+    .contact-heading {
+        font-size: 2.5rem; /* Even smaller heading for very small screens */
+    }
+}
+
