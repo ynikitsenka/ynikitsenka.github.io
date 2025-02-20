@@ -4,6 +4,16 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.text())
         .then(data => {
             document.body.insertAdjacentHTML("afterbegin", data);
+
+            // Add event listener for the hamburger menu
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('nav ul');
+
+            if (hamburger) {
+                hamburger.addEventListener('click', () => {
+                    navLinks.classList.toggle('menu-active');
+                });
+            }
         })
         .catch(error => console.error("Error loading navigation:", error));
 
