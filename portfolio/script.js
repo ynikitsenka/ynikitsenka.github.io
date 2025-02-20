@@ -1,21 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("navMenu");
+
     // Fetch and insert the navigation
     fetch("navigation.html")
         .then(response => response.text())
         .then(data => {
             document.body.insertAdjacentHTML("afterbegin", data);
-
-            // Add event listener for the hamburger menu
-            const hamburger = document.querySelector('.hamburger');
-            const navLinks = document.querySelector('nav ul');
-
-            if (hamburger) {
-                hamburger.addEventListener('click', () => {
-                    navLinks.classList.toggle('menu-active');
-                });
-            }
         })
         .catch(error => console.error("Error loading navigation:", error));
+
+    // Toggle the navigation menu and hamburger icon
+    hamburger.addEventListener("click", function () {
+        navMenu.classList.toggle("show");
+        hamburger.classList.toggle("active");
+    });
 
     // Fetch and insert the footer
     fetch("footer.html")
