@@ -71,7 +71,7 @@ nav ul li a:hover {
     }
 
     /* When the menu is open, display it */
-    .menu-active {
+    nav ul.show {
         display: flex;
     }
 
@@ -97,12 +97,20 @@ nav ul li a:hover {
         height: 4px;
         background-color: #212529;
     }
-}
 
-/* Toggle Menu (for mobile) */
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
+    /* Animation for Hamburger Button when clicked */
+    .hamburger.active div:nth-child(1) {
+        transform: rotate(45deg);
+        transform-origin: 5px 5px;
+    }
+
+    .hamburger.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active div:nth-child(3) {
+        transform: rotate(-45deg);
+        transform-origin: 5px 5px;
     }
 }
 
