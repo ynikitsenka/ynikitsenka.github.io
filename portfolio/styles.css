@@ -312,6 +312,46 @@ html, body {
     background-color: #5a6268;
 }
 
+/* Footer Section */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #DEE2E6;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    color: #212529;
+    font-size: 0.9rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #6c757d; /* Grey color for links */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #343a40; /* Darker grey on hover */
+}
+
+footer .social-icon {
+    width: 30px;
+    height: auto;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+
 /* --- RESUME SECTION --- */
 #resume {
     text-align: center;
