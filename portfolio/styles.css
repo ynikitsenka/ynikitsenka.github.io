@@ -344,6 +344,11 @@ footer a:hover {
     color: #343a40; /* Darker grey on hover */
 }
 
+/* Target mailto link specifically */
+footer a[href^="mailto:"] {
+    color: #6c757d; /* Ensures grey color for email links */
+}
+
 footer .social-icon {
     width: 30px;
     height: auto;
