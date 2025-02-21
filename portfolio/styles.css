@@ -71,19 +71,23 @@ nav.show {
 }
 
 /* Ensure the hamburger is positioned correctly */
+/* Hamburger Icon Styling */
 .hamburger {
-    position: absolute;
-    top: 15px; /* Adjust this if needed */
-    right: 15px; /* Moves it a little inward */
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 25px;
-    width: 35px; /* Slightly wider for better clickability */
+    width: 30px;
     background: none;
     border: none;
+
+    /* Add these new properties */
+    position: fixed; /* Keeps it in place */
+    top: 15px; /* Adjusts distance from the top */
+    right: 20px; /* Positions it at the right */
+    z-index: 1100; /* Ensures it's above other elements */
 }
 
 /* Ensuring the lines inside the hamburger are visible and aligned */
