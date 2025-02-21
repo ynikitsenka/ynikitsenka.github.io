@@ -450,15 +450,12 @@ footer .social-icon {
     }
 }
 #contact {
-    background: url('contact-bg.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 80px 20px;
-    border-radius: 15px;
-    width: 80%;
+    width: 100%;
     max-width: 600px;
     margin: 50px auto;
+    padding: 40px 20px; /* Adjusted padding for smaller screens */
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box; /* Ensures padding is included in width */
+    box-sizing: border-box;
 }
 
 /* Contact Heading */
@@ -537,16 +534,15 @@ footer .social-icon {
 
 /* --- MEDIA QUERIES FOR RESPONSIVENESS --- */
 @media (max-width: 768px) {
-    /* For Smaller Screens */
     #contact {
-        width: 90%; /* Increase width on small screens */
-        padding: 40px 20px; /* Adjust padding */
+        width: 90%; /* Slightly reduced width */
+        padding: 40px 15px; /* Adjust padding for smaller screens */
     }
 
     .contact-heading {
-        font-size: 3rem; /* Smaller heading on smaller screens */
+        font-size: 2.5rem; /* Smaller heading for smaller screens */
     }
-
+    
     .contact-form {
         width: 100%; /* Full width for form on smaller screens */
         padding: 25px; /* Slightly less padding */
