@@ -449,6 +449,44 @@ footer .social-icon {
         font-size: 1.1rem; /* Larger font size */
     }
 }
+#contact {
+    background: url('contact-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 80px 20px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+/* Contact Heading */
+.contact-heading {
+    font-family: 'Garamond', serif;
+    font-size: 4rem;
+    color: #212529;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px 40px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    text-align: left;
+}
+
 /* Form Inputs & Textarea */
 .contact-form label {
     font-weight: bold;
@@ -496,8 +534,6 @@ footer .social-icon {
 .contact-form button:hover {
     background-color: #5a6268;
 }
-
-/* Add your additional media queries below */
 
 /* --- MEDIA QUERIES FOR RESPONSIVENESS --- */
 @media (max-width: 768px) {
