@@ -529,5 +529,20 @@ footer a {
     .contact-heading {
         font-size: 2.5rem; /* Even smaller heading for very small screens */
     }
+    
+    @media (max-width: 480px) {
+    #contact {
+        width: 90%; /* Allows more space on very small screens */
+        padding: 30px 15px; /* Adjusts padding for better fit */
+    }
+
+    .contact-form {
+        max-width: 100%; /* Ensures it does not exceed the container */
+    }
+
+    .contact-heading {
+        font-size: 2rem; /* Reduces heading size further */
+    }
+}
 }
 
