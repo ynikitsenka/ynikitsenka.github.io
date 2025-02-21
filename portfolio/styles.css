@@ -357,7 +357,7 @@ footer .social-icon {
 }
 
 html, body {
-    height: 100%; /* Allow full page height */
+    height: 100%; /* Full page height */
     margin: 0;
     padding: 0;
     overflow-y: auto; /* Allow scrolling */
@@ -367,7 +367,7 @@ html, body {
 /* Container to center and limit width of page content */
 .container {
     width: 100%;
-    max-width: 1200px; /* Set a max width for larger screens */
+    max-width: 1200px; /* Max width for larger screens */
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
@@ -375,7 +375,7 @@ html, body {
 
 /* Resume section styling */
 #resume {
-    background-color: #ffffff; /* White background for resume */
+    background-color: #f0f0f0; /* Light grey background */
     padding: 40px 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
@@ -393,7 +393,7 @@ html, body {
 
 /* Button container style */
 .resume-container {
-    background-color: #f9f9f9; /* Light gray background */
+    background-color: #e0e0e0; /* Lighter grey for the container */
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -402,20 +402,27 @@ html, body {
 
 /* Button styles */
 .resume-container .btn {
-    background-color: #007bff; /* Bright blue for the button */
+    background-color: #757575; /* Dark grey button */
     color: white;
     padding: 12px 24px;
     font-size: 1.1rem;
     border-radius: 6px;
     transition: background-color 0.3s ease;
-    text-decoration: none; /* Remove underline from link */
-    display: inline-block; /* Ensure button acts as a block */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Block display for button */
     cursor: pointer;
 }
 
 /* Hover effect for button */
 .resume-container .btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #616161; /* Darker grey on hover */
+}
+
+/* Image adjustments */
+.resume-container img {
+    max-width: 60%; /* Reduce image size */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px;
 }
 
 /* --- MEDIA QUERIES FOR RESPONSIVENESS --- */
