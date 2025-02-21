@@ -497,6 +497,8 @@ footer .social-icon {
     background-color: #5a6268;
 }
 
+/* Add your additional media queries below */
+
 /* --- MEDIA QUERIES FOR RESPONSIVENESS --- */
 @media (max-width: 768px) {
     /* For Smaller Screens */
