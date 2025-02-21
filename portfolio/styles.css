@@ -356,69 +356,45 @@ footer .social-icon {
     vertical-align: middle;
 }
 
+html, body {
+    height: auto; /* Let the page adjust its height */
+    margin: 0;
+    padding: 0;
+    overflow-y: auto; /* Allow scrolling */
 
-/* --- RESUME SECTION --- */
+
 #resume {
     text-align: center;
     padding: 40px 20px;
     background-color: #f9f9f9;
-    box-sizing: border-box; /* Ensure padding is included in width */
+    box-sizing: border-box; /* Include padding in width */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+    border-radius: 10px; /* Slight rounding of corners */
+    margin-top: 40px; /* Ensure it's spaced from the top */
 }
 
-/* Resume Title */
+/* Make sure it is always visible */
 #resume h2 {
     font-size: 2rem;
     color: #212529;
+    font-family: 'Arial', sans-serif;
     margin-bottom: 20px;
-    font-family: sans-serif;
 }
 
-/* Resume Container */
-.resume-container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    box-sizing: border-box; /* Ensures padding is included */
-    overflow: auto; /* Allows scrolling if content overflows */
-}
-
-/* Resume Image */
-.resume-container img {
-    display: block;
-    max-width: 80%;
-    max-height: 500px;
-    height: auto;
-    border-radius: 10px;
-    border: 3px solid #444;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-    margin: 0 auto 15px auto;
-}
-
-/* Glow Effect */
-.glow-border {
-    border: 3px solid #00b4d8;
-    box-shadow: 0px 0px 10px #00b4d8;
-}
-
-/* Resume Download Button */
+/* Optional: Add a background color to the resume button */
 .resume-container .btn {
-    display: inline-block;
-    background-color: #6c757d;
+    background-color: #007bff; /* Bright color for emphasis */
     color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    margin-top: 15px;
-    transition: background 0.3s, transform 0.2s;
-    white-space: nowrap; /* Prevents text from wrapping */
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
-/* Button Hover Effect */
 .resume-container .btn:hover {
-    background-color: #5a6268;
-    transform: scale(1.05);
+    background-color: #0056b3; /* Darker blue on hover */
 }
+
 
 /* --- MEDIA QUERIES FOR RESPONSIVENESS --- */
 @media (max-width: 768px) {
