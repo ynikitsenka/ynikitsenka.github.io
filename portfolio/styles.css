@@ -70,32 +70,33 @@ nav.show {
     display: block;
 }
 
-/* Hamburger Menu */
+/* Ensure the hamburger is positioned correctly */
 .hamburger {
+    position: absolute;
+    top: 15px; /* Adjust this if needed */
+    right: 15px; /* Moves it a little inward */
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 30px;
-    width: 35px;
+    height: 25px;
+    width: 35px; /* Slightly wider for better clickability */
     background: none;
     border: none;
-    position: absolute;
-    right: 20px;
-    top: 10px;
 }
 
+/* Ensuring the lines inside the hamburger are visible and aligned */
 .hamburger div {
     width: 100%;
     height: 4px;
     background-color: #212529;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
-/* Hamburger Animation */
+/* When active, rotate the hamburger into an "X" */
 .hamburger.active div:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: translateY(8px) rotate(45deg);
 }
 
 .hamburger.active div:nth-child(2) {
@@ -103,7 +104,7 @@ nav.show {
 }
 
 .hamburger.active div:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Responsive Design */
