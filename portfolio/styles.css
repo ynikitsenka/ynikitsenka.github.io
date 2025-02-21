@@ -424,12 +424,13 @@ html, body {
     background-color: #616161; /* Darker grey on hover */
 }
 
-/* Image adjustments */
 .resume-container img {
-    max-width: 60%; /* Reduce image size */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 20px;
+    display: block; /* Ensures it behaves like a block element */
+    margin: 20px auto; /* Centers it horizontally */
+    max-width: 60%; /* Adjusts size */
+    height: auto; /* Maintains aspect ratio */
 }
+
 
 /* --- MEDIA QUERIES FOR RESPONSIVENESS --- */
 @media (max-width: 768px) {
