@@ -406,22 +406,17 @@ html, body {
     margin-right: auto; /* Ensure it's centered */
 }
 
-/* Button styles */
 .resume-container .btn {
-    background-color: #757575; /* Dark grey button */
-    color: white;
-    padding: 12px 24px;
-    font-size: 1.1rem;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Block display for button */
-    cursor: pointer;
+    display: block; /* Ensures the button is on a new line */
+    width: fit-content; /* Prevents it from stretching */
+    margin: 20px auto; /* Centers it */
+    padding: 12px 24px; /* Ensures it remains clickable */
+    font-size: 1rem; /* Keeps text readable */
+    line-height: 1.5; /* Ensures proper spacing inside the button */
 }
 
-/* Hover effect for button */
-.resume-container .btn:hover {
-    background-color: #616161; /* Darker grey on hover */
+.resume-container {
+    padding-bottom: 40px; /* Adds extra space below the button */
 }
 
 .resume-container img {
@@ -449,15 +444,13 @@ html, body {
         margin-top: 20px;
     }
 }
-
+/* Adjust for very small screens */
 @media (max-width: 480px) {
     .resume-container .btn {
-        padding: 12px 24px; /* Increase button size for mobile */
-        font-size: 1.1rem;
+        font-size: 1rem;
+        padding: 10px 20px; /* Keeps button large enough for touch */
     }
 }
-
-
 #contact {
     width: 100%;
     max-width: 600px;
