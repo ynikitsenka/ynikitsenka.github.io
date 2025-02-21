@@ -368,7 +368,7 @@ html, body {
 .container {
     width: 100%;
     max-width: 1200px; /* Max width for larger screens */
-    margin: 0 auto;
+    margin: 0 auto; /* Center the container */
     padding: 20px;
     box-sizing: border-box;
 }
@@ -381,6 +381,9 @@ html, body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
     text-align: center;
     margin-top: 40px;
+    max-width: 900px; /* Set max-width to ensure it's not too large */
+    margin-left: auto; /* Ensure it is centered */
+    margin-right: auto; /* Ensure it is centered */
 }
 
 /* Heading styles for the resume section */
@@ -398,6 +401,9 @@ html, body {
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     margin-top: 30px;
+    max-width: 800px; /* Limit width for better proportion */
+    margin-left: auto; /* Ensure it's centered */
+    margin-right: auto; /* Ensure it's centered */
 }
 
 /* Button styles */
@@ -449,6 +455,7 @@ html, body {
         font-size: 1.1rem;
     }
 }
+
 
 #contact {
     width: 100%;
