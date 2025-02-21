@@ -357,74 +357,92 @@ footer .social-icon {
 }
 
 html, body {
-    height: auto; /* Let the page adjust its height */
+    height: 100%; /* Allow full page height */
     margin: 0;
     padding: 0;
     overflow-y: auto; /* Allow scrolling */
-
-
-#resume {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    box-sizing: border-box; /* Include padding in width */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
-    border-radius: 10px; /* Slight rounding of corners */
-    margin-top: 40px; /* Ensure it's spaced from the top */
+    font-family: 'Arial', sans-serif; /* Consistent font */
 }
 
-/* Make sure it is always visible */
+/* Container to center and limit width of page content */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Set a max width for larger screens */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Resume section styling */
+#resume {
+    background-color: #ffffff; /* White background for resume */
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Heading styles for the resume section */
 #resume h2 {
     font-size: 2rem;
     color: #212529;
-    font-family: 'Arial', sans-serif;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
-/* Optional: Add a background color to the resume button */
-.resume-container .btn {
-    background-color: #007bff; /* Bright color for emphasis */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
+/* Button container style */
+.resume-container {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
 }
 
+/* Button styles */
+.resume-container .btn {
+    background-color: #007bff; /* Bright blue for the button */
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove underline from link */
+    display: inline-block; /* Ensure button acts as a block */
+    cursor: pointer;
+}
+
+/* Hover effect for button */
 .resume-container .btn:hover {
     background-color: #0056b3; /* Darker blue on hover */
 }
 
-
 /* --- MEDIA QUERIES FOR RESPONSIVENESS --- */
 @media (max-width: 768px) {
     #resume {
-        padding: 30px 15px; /* Reduced padding */
+        padding: 30px 15px; /* Less padding on smaller screens */
     }
 
     .resume-container {
-        max-width: 100%; /* Makes container take full width on smaller screens */
-        padding: 10px; /* Adds padding to container */
-    }
-
-    .resume-container img {
-        max-width: 100%; /* Ensures the image fits on smaller screens */
-        height: auto; /* Keeps the aspect ratio */
+        max-width: 100%; /* Full width on smaller screens */
+        padding: 15px; /* Slightly less padding for compact screens */
     }
 
     .resume-container .btn {
-        padding: 10px 20px; /* Increase button size */
-        font-size: 1rem; /* Increase font size for easier interaction */
+        padding: 10px 20px; /* Adjust button size */
+        font-size: 1rem;
         margin-top: 20px;
     }
 }
 
 @media (max-width: 480px) {
     .resume-container .btn {
-        padding: 12px 24px; /* Further increase button size for mobile */
-        font-size: 1.1rem; /* Larger font size */
+        padding: 12px 24px; /* Increase button size for mobile */
+        font-size: 1.1rem;
     }
 }
+
 #contact {
     width: 100%;
     max-width: 600px;
