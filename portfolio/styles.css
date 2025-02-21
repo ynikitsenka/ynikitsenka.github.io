@@ -317,6 +317,7 @@ html, body {
     text-align: center;
     padding: 40px 20px;
     background-color: #f9f9f9;
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 /* Resume Title */
@@ -332,18 +333,20 @@ html, body {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    box-sizing: border-box; /* Ensures padding is included */
+    overflow: auto; /* Allows scrolling if content overflows */
 }
 
 /* Resume Image */
 .resume-container img {
     display: block;
-    max-width: 80%; /* Smaller size */
-    max-height: 500px; /* Prevents it from being too tall */
+    max-width: 80%;
+    max-height: 500px;
     height: auto;
     border-radius: 10px;
     border: 3px solid #444;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-    margin: 0 auto 15px auto; /* Centers & adds space below */
+    margin: 0 auto 15px auto;
 }
 
 /* Glow Effect */
@@ -358,90 +361,49 @@ html, body {
     background-color: #6c757d;
     color: white;
     text-decoration: none;
-    padding: 8px 12px; /* Smaller button */
+    padding: 8px 12px;
     border-radius: 8px;
     font-size: 0.9rem;
-    margin-top: 15px; /* Adds space between image & button */
+    margin-top: 15px;
     transition: background 0.3s, transform 0.2s;
+    white-space: nowrap; /* Prevents text from wrapping */
 }
 
 /* Button Hover Effect */
 .resume-container .btn:hover {
     background-color: #5a6268;
-    transform: scale(1.05); /* Subtle pop effect */
+    transform: scale(1.05);
 }
 
-/* Footer Section */
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #DEE2E6;
-    padding: 10px 0;
-    text-align: center;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+/* --- MEDIA QUERIES FOR RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    #resume {
+        padding: 30px 15px; /* Reduced padding */
+    }
+
+    .resume-container {
+        max-width: 100%; /* Makes container take full width on smaller screens */
+        padding: 10px; /* Adds padding to container */
+    }
+
+    .resume-container img {
+        max-width: 100%; /* Ensures the image fits on smaller screens */
+        height: auto; /* Keeps the aspect ratio */
+    }
+
+    .resume-container .btn {
+        padding: 10px 20px; /* Increase button size */
+        font-size: 1rem; /* Increase font size for easier interaction */
+        margin-top: 20px;
+    }
 }
 
-footer p {
-    margin: 0;
-    color: #212529;
-    font-size: 0.9rem;
+@media (max-width: 480px) {
+    .resume-container .btn {
+        padding: 12px 24px; /* Further increase button size for mobile */
+        font-size: 1.1rem; /* Larger font size */
+    }
 }
-
-footer a {
-    text-decoration: none;
-}
-
-.social-icon {
-    width: 30px;  /* Set the width of the LinkedIn icon */
-    height: auto; /* Keeps aspect ratio */
-    margin-left: 5px; /* Adds spacing */
-    vertical-align: middle;
-}
-
-#contact {
-    background: url('contact-bg.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 80px 20px;
-    border-radius: 15px;
-    width: 80%;
-    max-width: 600px;
-    margin: 50px auto;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box; /* Ensures padding is included in width */
-}
-
-/* Contact Heading */
-.contact-heading {
-    font-family: 'Garamond', serif;
-    font-size: 4rem;
-    color: #212529;
-    background: rgba(0, 0, 0, 0.2);
-    padding: 15px 40px;
-    border-radius: 8px;
-    display: inline-block;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-/* Contact Form Styling */
-.contact-form {
-    background: rgba(255, 255, 255, 0.95);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 500px;
-    margin: 30px auto;
-    box-sizing: border-box; /* Ensures padding is included in width */
-    text-align: left;
-}
-
 /* Form Inputs & Textarea */
 .contact-form label {
     font-weight: bold;
