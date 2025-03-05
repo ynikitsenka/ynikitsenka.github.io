@@ -352,7 +352,7 @@ footer a[href^="mailto:"] {
 footer .social-icon {
     width: 30px;
     height: auto;
-    margin-left: 5px;
+    margin: 0 5px; /* Adds even space on both sides */
     vertical-align: middle;
 }
 
