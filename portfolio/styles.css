@@ -356,6 +356,13 @@ footer .social-icon {
     vertical-align: middle;
 }
 
+footer .palette-icon {
+    width: 40px; /* Slightly larger for color palette icon */
+    height: auto;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
 html, body {
     height: 100%; /* Full page height */
     margin: 0;
